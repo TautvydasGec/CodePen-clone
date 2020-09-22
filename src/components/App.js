@@ -3,9 +3,13 @@ import Editor from './Editor'
 import useLocalStorage from '../hooks/useLocalStorage'
 
 const App = () => {
-  const [html, setHtml] = useLocalStorage('html', '')
-  const [css, setCss] = useLocalStorage('css', '')
-  const [js, setJs] = useLocalStorage('js', '')
+  const [html, setHtml] = useLocalStorage('html', '<h1>Hello world</h1>')
+  const [css, setCss] = useLocalStorage('css',
+    `body {
+      background - color: #33373F;
+    }`
+  )
+  const [js, setJs] = useLocalStorage('js', `document.body.style.color = '#61DAFB'`)
   const [srcDoc, setSrcDoc] = useState('')
 
   useEffect(() => {
