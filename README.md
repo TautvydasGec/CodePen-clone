@@ -10,8 +10,8 @@ CodePen clone app made with ReactJs <br>
 **CSS:**
 ```
 body {
-      background - color: #33373F;
-    }
+      background-color: #33373F;
+}
 ```
 **JavaScript:**
 ```
